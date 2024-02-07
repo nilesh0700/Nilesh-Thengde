@@ -1,0 +1,40 @@
+.animated-text-container {
+    position: relative;
+  }
+  
+  .animated-text-out {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 1;
+    animation: fadeOut 1.5s ease forwards;
+  }
+  
+  .animated-text-in {
+    position: absolute;
+    top: -100%;
+    left: 0;
+    opacity: 0;
+    animation: fadeIn 1.5s ease forwards;
+  }
+  
+  @keyframes fadeOut {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+  }
+  
+  @keyframes fadeIn {
+    from {
+      top: -100%;
+      opacity: 0;
+    }
+    to {
+      top: 0;
+      opacity: 1;
+    }
+  }
+  
