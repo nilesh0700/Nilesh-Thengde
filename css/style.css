@@ -360,12 +360,46 @@ h1, h2, h3, h4, h5, h6, figure {
   zoom: 1;
   display: inline;
 }
+
+.fh5co-social-icons {
+  list-style-type: none;
+  padding: 0;
+}
+
+.fh5co-social-icons li {
+  display: inline;
+  position: relative;
+}
+
+.fh5co-social-icons li a {
+  text-decoration: none;
+  color: #ffffff;
+  padding: 10px;
+}
+
+.popup {
+  display: none;
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #333;
+  color: #fff;
+  padding: 5px;
+  border-radius: 5px;
+  white-space: nowrap;
+  z-index: 10;
+}
+
+.fh5co-social-icons li:hover .popup {
+  display: block;
+}
 .fh5co-social-icons li a {
   display: -moz-inline-stack;
   display: inline-block;
   zoom: 1;
   display: inline;
-  color: #3FA2F6;
+  color: #ffffff;
   padding-left: 10px;
   padding-right: 10px;
 }
